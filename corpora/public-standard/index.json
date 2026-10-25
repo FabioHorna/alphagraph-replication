@@ -1,0 +1,709 @@
+{
+  "provenance": {
+    "rome": "http://www.graphdrawing.org/data/rome-graphml.tgz (11534 undirected graphs)",
+    "north": "http://www.graphdrawing.org/data/north-graphml.tgz (1277 DAGs)",
+    "note": "Real public Graph Drawing corpora; size-stratified deterministic sample (50 per type)."
+  },
+  "graphs": [
+    {
+      "name": "rome-01",
+      "type": "rome",
+      "source": "grafo1000.14.graphml",
+      "nodes": 14,
+      "edges": 20
+    },
+    {
+      "name": "rome-02",
+      "type": "rome",
+      "source": "grafo1367.25.graphml",
+      "nodes": 25,
+      "edges": 26
+    },
+    {
+      "name": "rome-03",
+      "type": "rome",
+      "source": "grafo1806.23.graphml",
+      "nodes": 23,
+      "edges": 28
+    },
+    {
+      "name": "rome-04",
+      "type": "rome",
+      "source": "grafo2127.18.graphml",
+      "nodes": 18,
+      "edges": 23
+    },
+    {
+      "name": "rome-05",
+      "type": "rome",
+      "source": "grafo2357.23.graphml",
+      "nodes": 23,
+      "edges": 22
+    },
+    {
+      "name": "rome-06",
+      "type": "rome",
+      "source": "grafo2608.18.graphml",
+      "nodes": 18,
+      "edges": 23
+    },
+    {
+      "name": "rome-07",
+      "type": "rome",
+      "source": "grafo2850.14.graphml",
+      "nodes": 14,
+      "edges": 17
+    },
+    {
+      "name": "rome-08",
+      "type": "rome",
+      "source": "grafo361.13.graphml",
+      "nodes": 13,
+      "edges": 14
+    },
+    {
+      "name": "rome-09",
+      "type": "rome",
+      "source": "grafo568.20.graphml",
+      "nodes": 20,
+      "edges": 21
+    },
+    {
+      "name": "rome-10",
+      "type": "rome",
+      "source": "grafo789.24.graphml",
+      "nodes": 24,
+      "edges": 30
+    },
+    {
+      "name": "rome-11",
+      "type": "rome",
+      "source": "grafo10000.38.graphml",
+      "nodes": 38,
+      "edges": 52
+    },
+    {
+      "name": "rome-12",
+      "type": "rome",
+      "source": "grafo11167.37.graphml",
+      "nodes": 37,
+      "edges": 48
+    },
+    {
+      "name": "rome-13",
+      "type": "rome",
+      "source": "grafo11611.32.graphml",
+      "nodes": 32,
+      "edges": 38
+    },
+    {
+      "name": "rome-14",
+      "type": "rome",
+      "source": "grafo1623.30.graphml",
+      "nodes": 30,
+      "edges": 41
+    },
+    {
+      "name": "rome-15",
+      "type": "rome",
+      "source": "grafo2407.33.graphml",
+      "nodes": 33,
+      "edges": 40
+    },
+    {
+      "name": "rome-16",
+      "type": "rome",
+      "source": "grafo3244.39.graphml",
+      "nodes": 39,
+      "edges": 48
+    },
+    {
+      "name": "rome-17",
+      "type": "rome",
+      "source": "grafo3960.36.graphml",
+      "nodes": 36,
+      "edges": 41
+    },
+    {
+      "name": "rome-18",
+      "type": "rome",
+      "source": "grafo5570.37.graphml",
+      "nodes": 37,
+      "edges": 49
+    },
+    {
+      "name": "rome-19",
+      "type": "rome",
+      "source": "grafo6167.40.graphml",
+      "nodes": 40,
+      "edges": 57
+    },
+    {
+      "name": "rome-20",
+      "type": "rome",
+      "source": "grafo7274.38.graphml",
+      "nodes": 38,
+      "edges": 54
+    },
+    {
+      "name": "rome-21",
+      "type": "rome",
+      "source": "grafo10008.42.graphml",
+      "nodes": 42,
+      "edges": 61
+    },
+    {
+      "name": "rome-22",
+      "type": "rome",
+      "source": "grafo2892.41.graphml",
+      "nodes": 41,
+      "edges": 47
+    },
+    {
+      "name": "rome-23",
+      "type": "rome",
+      "source": "grafo3528.45.graphml",
+      "nodes": 45,
+      "edges": 53
+    },
+    {
+      "name": "rome-24",
+      "type": "rome",
+      "source": "grafo3993.52.graphml",
+      "nodes": 52,
+      "edges": 82
+    },
+    {
+      "name": "rome-25",
+      "type": "rome",
+      "source": "grafo4966.53.graphml",
+      "nodes": 53,
+      "edges": 66
+    },
+    {
+      "name": "rome-26",
+      "type": "rome",
+      "source": "grafo5672.48.graphml",
+      "nodes": 48,
+      "edges": 70
+    },
+    {
+      "name": "rome-27",
+      "type": "rome",
+      "source": "grafo6228.46.graphml",
+      "nodes": 46,
+      "edges": 62
+    },
+    {
+      "name": "rome-28",
+      "type": "rome",
+      "source": "grafo6639.48.graphml",
+      "nodes": 48,
+      "edges": 60
+    },
+    {
+      "name": "rome-29",
+      "type": "rome",
+      "source": "grafo7056.41.graphml",
+      "nodes": 41,
+      "edges": 51
+    },
+    {
+      "name": "rome-30",
+      "type": "rome",
+      "source": "grafo7420.41.graphml",
+      "nodes": 41,
+      "edges": 58
+    },
+    {
+      "name": "rome-31",
+      "type": "rome",
+      "source": "grafo1180.66.graphml",
+      "nodes": 66,
+      "edges": 87
+    },
+    {
+      "name": "rome-32",
+      "type": "rome",
+      "source": "grafo3607.56.graphml",
+      "nodes": 56,
+      "edges": 91
+    },
+    {
+      "name": "rome-33",
+      "type": "rome",
+      "source": "grafo4335.60.graphml",
+      "nodes": 60,
+      "edges": 87
+    },
+    {
+      "name": "rome-34",
+      "type": "rome",
+      "source": "grafo4678.58.graphml",
+      "nodes": 58,
+      "edges": 75
+    },
+    {
+      "name": "rome-35",
+      "type": "rome",
+      "source": "grafo4995.59.graphml",
+      "nodes": 59,
+      "edges": 76
+    },
+    {
+      "name": "rome-36",
+      "type": "rome",
+      "source": "grafo5964.60.graphml",
+      "nodes": 60,
+      "edges": 78
+    },
+    {
+      "name": "rome-37",
+      "type": "rome",
+      "source": "grafo7324.61.graphml",
+      "nodes": 61,
+      "edges": 78
+    },
+    {
+      "name": "rome-38",
+      "type": "rome",
+      "source": "grafo8187.70.graphml",
+      "nodes": 70,
+      "edges": 89
+    },
+    {
+      "name": "rome-39",
+      "type": "rome",
+      "source": "grafo9093.61.graphml",
+      "nodes": 61,
+      "edges": 80
+    },
+    {
+      "name": "rome-40",
+      "type": "rome",
+      "source": "grafo9426.65.graphml",
+      "nodes": 65,
+      "edges": 106
+    },
+    {
+      "name": "rome-41",
+      "type": "rome",
+      "source": "grafo10006.98.graphml",
+      "nodes": 98,
+      "edges": 136
+    },
+    {
+      "name": "rome-42",
+      "type": "rome",
+      "source": "grafo10465.96.graphml",
+      "nodes": 96,
+      "edges": 129
+    },
+    {
+      "name": "rome-43",
+      "type": "rome",
+      "source": "grafo10864.99.graphml",
+      "nodes": 99,
+      "edges": 140
+    },
+    {
+      "name": "rome-44",
+      "type": "rome",
+      "source": "grafo11257.91.graphml",
+      "nodes": 91,
+      "edges": 129
+    },
+    {
+      "name": "rome-45",
+      "type": "rome",
+      "source": "grafo4552.78.graphml",
+      "nodes": 78,
+      "edges": 108
+    },
+    {
+      "name": "rome-46",
+      "type": "rome",
+      "source": "grafo6536.93.graphml",
+      "nodes": 93,
+      "edges": 116
+    },
+    {
+      "name": "rome-47",
+      "type": "rome",
+      "source": "grafo8064.77.graphml",
+      "nodes": 77,
+      "edges": 107
+    },
+    {
+      "name": "rome-48",
+      "type": "rome",
+      "source": "grafo8472.81.graphml",
+      "nodes": 81,
+      "edges": 109
+    },
+    {
+      "name": "rome-49",
+      "type": "rome",
+      "source": "grafo8815.87.graphml",
+      "nodes": 87,
+      "edges": 110
+    },
+    {
+      "name": "rome-50",
+      "type": "rome",
+      "source": "grafo9343.80.graphml",
+      "nodes": 80,
+      "edges": 103
+    },
+    {
+      "name": "north-01",
+      "type": "north",
+      "source": "g.10.11.graphml",
+      "nodes": 10,
+      "edges": 14
+    },
+    {
+      "name": "north-02",
+      "type": "north",
+      "source": "g.14.16.graphml",
+      "nodes": 14,
+      "edges": 13
+    },
+    {
+      "name": "north-03",
+      "type": "north",
+      "source": "g.17.18.graphml",
+      "nodes": 17,
+      "edges": 16
+    },
+    {
+      "name": "north-04",
+      "type": "north",
+      "source": "g.20.22.graphml",
+      "nodes": 20,
+      "edges": 21
+    },
+    {
+      "name": "north-05",
+      "type": "north",
+      "source": "g.23.20.graphml",
+      "nodes": 23,
+      "edges": 33
+    },
+    {
+      "name": "north-06",
+      "type": "north",
+      "source": "g.28.16.graphml",
+      "nodes": 28,
+      "edges": 33
+    },
+    {
+      "name": "north-07",
+      "type": "north",
+      "source": "g.32.21.graphml",
+      "nodes": 32,
+      "edges": 59
+    },
+    {
+      "name": "north-08",
+      "type": "north",
+      "source": "g.37.20.graphml",
+      "nodes": 37,
+      "edges": 75
+    },
+    {
+      "name": "north-09",
+      "type": "north",
+      "source": "g.43.19.graphml",
+      "nodes": 43,
+      "edges": 53
+    },
+    {
+      "name": "north-10",
+      "type": "north",
+      "source": "g.49.12.graphml",
+      "nodes": 49,
+      "edges": 99
+    },
+    {
+      "name": "north-11",
+      "type": "north",
+      "source": "g.10.27.graphml",
+      "nodes": 10,
+      "edges": 21
+    },
+    {
+      "name": "north-12",
+      "type": "north",
+      "source": "g.12.35.graphml",
+      "nodes": 12,
+      "edges": 17
+    },
+    {
+      "name": "north-13",
+      "type": "north",
+      "source": "g.14.38.graphml",
+      "nodes": 14,
+      "edges": 21
+    },
+    {
+      "name": "north-14",
+      "type": "north",
+      "source": "g.17.28.graphml",
+      "nodes": 17,
+      "edges": 18
+    },
+    {
+      "name": "north-15",
+      "type": "north",
+      "source": "g.18.38.graphml",
+      "nodes": 18,
+      "edges": 27
+    },
+    {
+      "name": "north-16",
+      "type": "north",
+      "source": "g.20.37.graphml",
+      "nodes": 20,
+      "edges": 19
+    },
+    {
+      "name": "north-17",
+      "type": "north",
+      "source": "g.23.37.graphml",
+      "nodes": 23,
+      "edges": 22
+    },
+    {
+      "name": "north-18",
+      "type": "north",
+      "source": "g.25.37.graphml",
+      "nodes": 25,
+      "edges": 24
+    },
+    {
+      "name": "north-19",
+      "type": "north",
+      "source": "g.31.36.graphml",
+      "nodes": 31,
+      "edges": 41
+    },
+    {
+      "name": "north-20",
+      "type": "north",
+      "source": "g.47.26.graphml",
+      "nodes": 47,
+      "edges": 71
+    },
+    {
+      "name": "north-21",
+      "type": "north",
+      "source": "g.10.41.graphml",
+      "nodes": 10,
+      "edges": 20
+    },
+    {
+      "name": "north-22",
+      "type": "north",
+      "source": "g.11.55.graphml",
+      "nodes": 11,
+      "edges": 10
+    },
+    {
+      "name": "north-23",
+      "type": "north",
+      "source": "g.13.42.graphml",
+      "nodes": 13,
+      "edges": 13
+    },
+    {
+      "name": "north-24",
+      "type": "north",
+      "source": "g.13.55.graphml",
+      "nodes": 13,
+      "edges": 12
+    },
+    {
+      "name": "north-25",
+      "type": "north",
+      "source": "g.15.52.graphml",
+      "nodes": 15,
+      "edges": 19
+    },
+    {
+      "name": "north-26",
+      "type": "north",
+      "source": "g.19.45.graphml",
+      "nodes": 19,
+      "edges": 19
+    },
+    {
+      "name": "north-27",
+      "type": "north",
+      "source": "g.20.51.graphml",
+      "nodes": 20,
+      "edges": 21
+    },
+    {
+      "name": "north-28",
+      "type": "north",
+      "source": "g.22.51.graphml",
+      "nodes": 22,
+      "edges": 21
+    },
+    {
+      "name": "north-29",
+      "type": "north",
+      "source": "g.24.45.graphml",
+      "nodes": 24,
+      "edges": 25
+    },
+    {
+      "name": "north-30",
+      "type": "north",
+      "source": "g.25.51.graphml",
+      "nodes": 25,
+      "edges": 25
+    },
+    {
+      "name": "north-31",
+      "type": "north",
+      "source": "g.10.56.graphml",
+      "nodes": 10,
+      "edges": 12
+    },
+    {
+      "name": "north-32",
+      "type": "north",
+      "source": "g.10.68.graphml",
+      "nodes": 10,
+      "edges": 13
+    },
+    {
+      "name": "north-33",
+      "type": "north",
+      "source": "g.11.63.graphml",
+      "nodes": 11,
+      "edges": 17
+    },
+    {
+      "name": "north-34",
+      "type": "north",
+      "source": "g.12.60.graphml",
+      "nodes": 12,
+      "edges": 26
+    },
+    {
+      "name": "north-35",
+      "type": "north",
+      "source": "g.13.61.graphml",
+      "nodes": 13,
+      "edges": 20
+    },
+    {
+      "name": "north-36",
+      "type": "north",
+      "source": "g.14.58.graphml",
+      "nodes": 14,
+      "edges": 22
+    },
+    {
+      "name": "north-37",
+      "type": "north",
+      "source": "g.14.66.graphml",
+      "nodes": 14,
+      "edges": 19
+    },
+    {
+      "name": "north-38",
+      "type": "north",
+      "source": "g.16.59.graphml",
+      "nodes": 16,
+      "edges": 28
+    },
+    {
+      "name": "north-39",
+      "type": "north",
+      "source": "g.16.65.graphml",
+      "nodes": 16,
+      "edges": 15
+    },
+    {
+      "name": "north-40",
+      "type": "north",
+      "source": "g.22.68.graphml",
+      "nodes": 22,
+      "edges": 24
+    },
+    {
+      "name": "north-41",
+      "type": "north",
+      "source": "g.10.71.graphml",
+      "nodes": 10,
+      "edges": 10
+    },
+    {
+      "name": "north-42",
+      "type": "north",
+      "source": "g.10.83.graphml",
+      "nodes": 10,
+      "edges": 15
+    },
+    {
+      "name": "north-43",
+      "type": "north",
+      "source": "g.10.93.graphml",
+      "nodes": 10,
+      "edges": 15
+    },
+    {
+      "name": "north-44",
+      "type": "north",
+      "source": "g.12.76.graphml",
+      "nodes": 12,
+      "edges": 32
+    },
+    {
+      "name": "north-45",
+      "type": "north",
+      "source": "g.12.92.graphml",
+      "nodes": 12,
+      "edges": 11
+    },
+    {
+      "name": "north-46",
+      "type": "north",
+      "source": "g.13.80.graphml",
+      "nodes": 13,
+      "edges": 17
+    },
+    {
+      "name": "north-47",
+      "type": "north",
+      "source": "g.13.91.graphml",
+      "nodes": 13,
+      "edges": 14
+    },
+    {
+      "name": "north-48",
+      "type": "north",
+      "source": "g.16.76.graphml",
+      "nodes": 16,
+      "edges": 15
+    },
+    {
+      "name": "north-49",
+      "type": "north",
+      "source": "g.23.100.graphml",
+      "nodes": 23,
+      "edges": 31
+    },
+    {
+      "name": "north-50",
+      "type": "north",
+      "source": "g.23.83.graphml",
+      "nodes": 23,
+      "edges": 49
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# The 100 derived graph files are rebuilt here by scripts/fetch_corpora.py.
+# They are not redistributed: see ../ATTRIBUTION.md.
+*.json
+!index.json
+!.gitignore

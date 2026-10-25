@@ -1,0 +1,43 @@
+{
+  "model": "KLM-GOMS (Card, Moran & Newell, 1983) — flujo de diagramación completo",
+  "operators_s": {
+    "CLICK": 0.2,
+    "POINT": 1.1,
+    "MENTAL": 1.35,
+    "HOME": 0.4,
+    "KEY": 0.28,
+    "DRAG": 1.5
+  },
+  "assumptions": {
+    "name_chars": 12,
+    "label_chars": 6,
+    "manual_repositions_per_node": 1,
+    "template_nodes": 4
+  },
+  "paths": {
+    "AlphaGraph full flow (template + armed palette + auto-layout + preset labels)": {
+      "mean_reduction_pct": 41.2,
+      "graphs_meeting_25pct": 100
+    },
+    "AlphaGraph WITHOUT templates (floor)": {
+      "mean_reduction_pct": 35.6,
+      "graphs_meeting_25pct": 100
+    }
+  },
+  "graphs_total": 100,
+  "full_flow_perType_mean_pct": {
+    "cyclic": 41,
+    "layered": 42.4,
+    "north": 38.8,
+    "rome": 39.3,
+    "tree": 44.4
+  },
+  "illustrative_case": {
+    "type": "tree",
+    "nodes": 6,
+    "edges": 5,
+    "manual_s": 119,
+    "alphagraph_s": 55,
+    "reduction_pct": 53.5
+  }
+}

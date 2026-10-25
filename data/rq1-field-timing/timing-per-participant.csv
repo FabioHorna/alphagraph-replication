@@ -1,0 +1,13 @@
+participant,sector,t_manual_s,t_app_s,reduction_pct,meets_25pct
+P01,technology,420,277,34.0,yes
+P02,technology,460,317,31.1,yes
+P03,technology,390,285,26.9,yes
+P04,technology,510,342,32.9,yes
+P05,auditing,360,274,23.9,no
+P06,auditing,440,308,30.0,yes
+P07,auditing,405,292,27.9,yes
+P08,auditing,380,293,22.9,no
+P09,auditing,475,323,32.0,yes
+P10,technology,350,259,26.0,yes
+P11,auditing,520,333,36.0,yes
+P12,auditing,330,257,22.1,no

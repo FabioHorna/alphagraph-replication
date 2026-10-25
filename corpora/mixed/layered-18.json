@@ -1,0 +1,278 @@
+{
+  "type": "layered",
+  "name": "layered-18",
+  "nodes": [
+    {
+      "id": "n0",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n1",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n2",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n3",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n4",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n5",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n6",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n7",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n8",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n9",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n10",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n11",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n12",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n13",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n14",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n15",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n16",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n17",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n18",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n19",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n20",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n21",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n22",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n23",
+      "width": 180,
+      "height": 80
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n6"
+    },
+    {
+      "id": "e1",
+      "source": "n0",
+      "target": "n4"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "target": "n6"
+    },
+    {
+      "id": "e3",
+      "source": "n1",
+      "target": "n4"
+    },
+    {
+      "id": "e4",
+      "source": "n2",
+      "target": "n5"
+    },
+    {
+      "id": "e5",
+      "source": "n3",
+      "target": "n5"
+    },
+    {
+      "id": "e6",
+      "source": "n3",
+      "target": "n4"
+    },
+    {
+      "id": "e7",
+      "source": "n4",
+      "target": "n11"
+    },
+    {
+      "id": "e8",
+      "source": "n5",
+      "target": "n9"
+    },
+    {
+      "id": "e9",
+      "source": "n6",
+      "target": "n9"
+    },
+    {
+      "id": "e10",
+      "source": "n6",
+      "target": "n7"
+    },
+    {
+      "id": "e11",
+      "source": "n7",
+      "target": "n13"
+    },
+    {
+      "id": "e12",
+      "source": "n7",
+      "target": "n18"
+    },
+    {
+      "id": "e13",
+      "source": "n8",
+      "target": "n12"
+    },
+    {
+      "id": "e14",
+      "source": "n9",
+      "target": "n12"
+    },
+    {
+      "id": "e15",
+      "source": "n9",
+      "target": "n16"
+    },
+    {
+      "id": "e16",
+      "source": "n10",
+      "target": "n13"
+    },
+    {
+      "id": "e17",
+      "source": "n11",
+      "target": "n13"
+    },
+    {
+      "id": "e18",
+      "source": "n11",
+      "target": "n12"
+    },
+    {
+      "id": "e19",
+      "source": "n12",
+      "target": "n16"
+    },
+    {
+      "id": "e20",
+      "source": "n12",
+      "target": "n14"
+    },
+    {
+      "id": "e21",
+      "source": "n13",
+      "target": "n14"
+    },
+    {
+      "id": "e22",
+      "source": "n14",
+      "target": "n22"
+    },
+    {
+      "id": "e23",
+      "source": "n14",
+      "target": "n21"
+    },
+    {
+      "id": "e24",
+      "source": "n15",
+      "target": "n23"
+    },
+    {
+      "id": "e25",
+      "source": "n16",
+      "target": "n21"
+    },
+    {
+      "id": "e26",
+      "source": "n16",
+      "target": "n23"
+    },
+    {
+      "id": "e27",
+      "source": "n17",
+      "target": "n21"
+    },
+    {
+      "id": "e28",
+      "source": "n17",
+      "target": "n22"
+    },
+    {
+      "id": "e29",
+      "source": "n18",
+      "target": "n23"
+    }
+  ]
+}

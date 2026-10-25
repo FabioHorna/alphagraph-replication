@@ -1,0 +1,88 @@
+{
+  "type": "layered",
+  "name": "layered-03",
+  "nodes": [
+    {
+      "id": "n0",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n1",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n2",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n3",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n4",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n5",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n6",
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": "n7",
+      "width": 180,
+      "height": 80
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n5"
+    },
+    {
+      "id": "e1",
+      "source": "n0",
+      "target": "n6"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "target": "n5"
+    },
+    {
+      "id": "e3",
+      "source": "n1",
+      "target": "n3"
+    },
+    {
+      "id": "e4",
+      "source": "n2",
+      "target": "n5"
+    },
+    {
+      "id": "e5",
+      "source": "n3",
+      "target": "n7"
+    },
+    {
+      "id": "e6",
+      "source": "n4",
+      "target": "n6"
+    },
+    {
+      "id": "e7",
+      "source": "n5",
+      "target": "n6"
+    }
+  ]
+}

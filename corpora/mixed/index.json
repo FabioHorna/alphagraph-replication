@@ -1,0 +1,602 @@
+[
+  {
+    "name": "layered-01",
+    "type": "layered",
+    "nodes": 21,
+    "edges": 30
+  },
+  {
+    "name": "layered-02",
+    "type": "layered",
+    "nodes": 11,
+    "edges": 12
+  },
+  {
+    "name": "layered-03",
+    "type": "layered",
+    "nodes": 8,
+    "edges": 8
+  },
+  {
+    "name": "layered-04",
+    "type": "layered",
+    "nodes": 20,
+    "edges": 23
+  },
+  {
+    "name": "layered-05",
+    "type": "layered",
+    "nodes": 18,
+    "edges": 24
+  },
+  {
+    "name": "layered-06",
+    "type": "layered",
+    "nodes": 9,
+    "edges": 12
+  },
+  {
+    "name": "layered-07",
+    "type": "layered",
+    "nodes": 21,
+    "edges": 20
+  },
+  {
+    "name": "layered-08",
+    "type": "layered",
+    "nodes": 16,
+    "edges": 24
+  },
+  {
+    "name": "layered-09",
+    "type": "layered",
+    "nodes": 13,
+    "edges": 18
+  },
+  {
+    "name": "layered-10",
+    "type": "layered",
+    "nodes": 15,
+    "edges": 18
+  },
+  {
+    "name": "layered-11",
+    "type": "layered",
+    "nodes": 9,
+    "edges": 8
+  },
+  {
+    "name": "layered-12",
+    "type": "layered",
+    "nodes": 17,
+    "edges": 20
+  },
+  {
+    "name": "layered-13",
+    "type": "layered",
+    "nodes": 17,
+    "edges": 22
+  },
+  {
+    "name": "layered-14",
+    "type": "layered",
+    "nodes": 22,
+    "edges": 30
+  },
+  {
+    "name": "layered-15",
+    "type": "layered",
+    "nodes": 8,
+    "edges": 9
+  },
+  {
+    "name": "layered-16",
+    "type": "layered",
+    "nodes": 22,
+    "edges": 30
+  },
+  {
+    "name": "layered-17",
+    "type": "layered",
+    "nodes": 30,
+    "edges": 36
+  },
+  {
+    "name": "layered-18",
+    "type": "layered",
+    "nodes": 24,
+    "edges": 30
+  },
+  {
+    "name": "layered-19",
+    "type": "layered",
+    "nodes": 20,
+    "edges": 27
+  },
+  {
+    "name": "layered-20",
+    "type": "layered",
+    "nodes": 13,
+    "edges": 16
+  },
+  {
+    "name": "tree-01",
+    "type": "tree",
+    "nodes": 9,
+    "edges": 8
+  },
+  {
+    "name": "tree-02",
+    "type": "tree",
+    "nodes": 10,
+    "edges": 9
+  },
+  {
+    "name": "tree-03",
+    "type": "tree",
+    "nodes": 22,
+    "edges": 21
+  },
+  {
+    "name": "tree-04",
+    "type": "tree",
+    "nodes": 23,
+    "edges": 22
+  },
+  {
+    "name": "tree-05",
+    "type": "tree",
+    "nodes": 13,
+    "edges": 12
+  },
+  {
+    "name": "tree-06",
+    "type": "tree",
+    "nodes": 11,
+    "edges": 10
+  },
+  {
+    "name": "tree-07",
+    "type": "tree",
+    "nodes": 15,
+    "edges": 14
+  },
+  {
+    "name": "tree-08",
+    "type": "tree",
+    "nodes": 19,
+    "edges": 18
+  },
+  {
+    "name": "tree-09",
+    "type": "tree",
+    "nodes": 10,
+    "edges": 9
+  },
+  {
+    "name": "tree-10",
+    "type": "tree",
+    "nodes": 20,
+    "edges": 19
+  },
+  {
+    "name": "tree-11",
+    "type": "tree",
+    "nodes": 16,
+    "edges": 15
+  },
+  {
+    "name": "tree-12",
+    "type": "tree",
+    "nodes": 6,
+    "edges": 5
+  },
+  {
+    "name": "tree-13",
+    "type": "tree",
+    "nodes": 9,
+    "edges": 8
+  },
+  {
+    "name": "tree-14",
+    "type": "tree",
+    "nodes": 21,
+    "edges": 20
+  },
+  {
+    "name": "tree-15",
+    "type": "tree",
+    "nodes": 18,
+    "edges": 17
+  },
+  {
+    "name": "tree-16",
+    "type": "tree",
+    "nodes": 11,
+    "edges": 10
+  },
+  {
+    "name": "tree-17",
+    "type": "tree",
+    "nodes": 11,
+    "edges": 10
+  },
+  {
+    "name": "tree-18",
+    "type": "tree",
+    "nodes": 12,
+    "edges": 11
+  },
+  {
+    "name": "tree-19",
+    "type": "tree",
+    "nodes": 21,
+    "edges": 20
+  },
+  {
+    "name": "tree-20",
+    "type": "tree",
+    "nodes": 16,
+    "edges": 15
+  },
+  {
+    "name": "cyclic-01",
+    "type": "cyclic",
+    "nodes": 24,
+    "edges": 32
+  },
+  {
+    "name": "cyclic-02",
+    "type": "cyclic",
+    "nodes": 13,
+    "edges": 24
+  },
+  {
+    "name": "cyclic-03",
+    "type": "cyclic",
+    "nodes": 19,
+    "edges": 29
+  },
+  {
+    "name": "cyclic-04",
+    "type": "cyclic",
+    "nodes": 13,
+    "edges": 20
+  },
+  {
+    "name": "cyclic-05",
+    "type": "cyclic",
+    "nodes": 9,
+    "edges": 17
+  },
+  {
+    "name": "cyclic-06",
+    "type": "cyclic",
+    "nodes": 15,
+    "edges": 24
+  },
+  {
+    "name": "cyclic-07",
+    "type": "cyclic",
+    "nodes": 16,
+    "edges": 24
+  },
+  {
+    "name": "cyclic-08",
+    "type": "cyclic",
+    "nodes": 22,
+    "edges": 40
+  },
+  {
+    "name": "cyclic-09",
+    "type": "cyclic",
+    "nodes": 17,
+    "edges": 31
+  },
+  {
+    "name": "cyclic-10",
+    "type": "cyclic",
+    "nodes": 19,
+    "edges": 33
+  },
+  {
+    "name": "cyclic-11",
+    "type": "cyclic",
+    "nodes": 16,
+    "edges": 27
+  },
+  {
+    "name": "cyclic-12",
+    "type": "cyclic",
+    "nodes": 16,
+    "edges": 26
+  },
+  {
+    "name": "cyclic-13",
+    "type": "cyclic",
+    "nodes": 12,
+    "edges": 24
+  },
+  {
+    "name": "cyclic-14",
+    "type": "cyclic",
+    "nodes": 11,
+    "edges": 19
+  },
+  {
+    "name": "cyclic-15",
+    "type": "cyclic",
+    "nodes": 8,
+    "edges": 13
+  },
+  {
+    "name": "cyclic-16",
+    "type": "cyclic",
+    "nodes": 20,
+    "edges": 34
+  },
+  {
+    "name": "cyclic-17",
+    "type": "cyclic",
+    "nodes": 13,
+    "edges": 22
+  },
+  {
+    "name": "cyclic-18",
+    "type": "cyclic",
+    "nodes": 9,
+    "edges": 15
+  },
+  {
+    "name": "cyclic-19",
+    "type": "cyclic",
+    "nodes": 20,
+    "edges": 35
+  },
+  {
+    "name": "cyclic-20",
+    "type": "cyclic",
+    "nodes": 19,
+    "edges": 31
+  },
+  {
+    "name": "rome-01",
+    "type": "rome",
+    "nodes": 18,
+    "edges": 21
+  },
+  {
+    "name": "rome-02",
+    "type": "rome",
+    "nodes": 22,
+    "edges": 29
+  },
+  {
+    "name": "rome-03",
+    "type": "rome",
+    "nodes": 54,
+    "edges": 70
+  },
+  {
+    "name": "rome-04",
+    "type": "rome",
+    "nodes": 56,
+    "edges": 72
+  },
+  {
+    "name": "rome-05",
+    "type": "rome",
+    "nodes": 29,
+    "edges": 37
+  },
+  {
+    "name": "rome-06",
+    "type": "rome",
+    "nodes": 24,
+    "edges": 30
+  },
+  {
+    "name": "rome-07",
+    "type": "rome",
+    "nodes": 35,
+    "edges": 46
+  },
+  {
+    "name": "rome-08",
+    "type": "rome",
+    "nodes": 46,
+    "edges": 60
+  },
+  {
+    "name": "rome-09",
+    "type": "rome",
+    "nodes": 22,
+    "edges": 27
+  },
+  {
+    "name": "rome-10",
+    "type": "rome",
+    "nodes": 48,
+    "edges": 62
+  },
+  {
+    "name": "rome-11",
+    "type": "rome",
+    "nodes": 37,
+    "edges": 47
+  },
+  {
+    "name": "rome-12",
+    "type": "rome",
+    "nodes": 12,
+    "edges": 16
+  },
+  {
+    "name": "rome-13",
+    "type": "rome",
+    "nodes": 18,
+    "edges": 22
+  },
+  {
+    "name": "rome-14",
+    "type": "rome",
+    "nodes": 51,
+    "edges": 66
+  },
+  {
+    "name": "rome-15",
+    "type": "rome",
+    "nodes": 44,
+    "edges": 57
+  },
+  {
+    "name": "rome-16",
+    "type": "rome",
+    "nodes": 24,
+    "edges": 31
+  },
+  {
+    "name": "rome-17",
+    "type": "rome",
+    "nodes": 23,
+    "edges": 30
+  },
+  {
+    "name": "rome-18",
+    "type": "rome",
+    "nodes": 28,
+    "edges": 36
+  },
+  {
+    "name": "rome-19",
+    "type": "rome",
+    "nodes": 50,
+    "edges": 64
+  },
+  {
+    "name": "rome-20",
+    "type": "rome",
+    "nodes": 38,
+    "edges": 49
+  },
+  {
+    "name": "north-01",
+    "type": "north",
+    "nodes": 15,
+    "edges": 27
+  },
+  {
+    "name": "north-02",
+    "type": "north",
+    "nodes": 21,
+    "edges": 38
+  },
+  {
+    "name": "north-03",
+    "type": "north",
+    "nodes": 41,
+    "edges": 76
+  },
+  {
+    "name": "north-04",
+    "type": "north",
+    "nodes": 29,
+    "edges": 52
+  },
+  {
+    "name": "north-05",
+    "type": "north",
+    "nodes": 12,
+    "edges": 20
+  },
+  {
+    "name": "north-06",
+    "type": "north",
+    "nodes": 28,
+    "edges": 47
+  },
+  {
+    "name": "north-07",
+    "type": "north",
+    "nodes": 24,
+    "edges": 41
+  },
+  {
+    "name": "north-08",
+    "type": "north",
+    "nodes": 30,
+    "edges": 58
+  },
+  {
+    "name": "north-09",
+    "type": "north",
+    "nodes": 10,
+    "edges": 15
+  },
+  {
+    "name": "north-10",
+    "type": "north",
+    "nodes": 41,
+    "edges": 77
+  },
+  {
+    "name": "north-11",
+    "type": "north",
+    "nodes": 59,
+    "edges": 107
+  },
+  {
+    "name": "north-12",
+    "type": "north",
+    "nodes": 32,
+    "edges": 55
+  },
+  {
+    "name": "north-13",
+    "type": "north",
+    "nodes": 37,
+    "edges": 64
+  },
+  {
+    "name": "north-14",
+    "type": "north",
+    "nodes": 42,
+    "edges": 76
+  },
+  {
+    "name": "north-15",
+    "type": "north",
+    "nodes": 45,
+    "edges": 82
+  },
+  {
+    "name": "north-16",
+    "type": "north",
+    "nodes": 53,
+    "edges": 94
+  },
+  {
+    "name": "north-17",
+    "type": "north",
+    "nodes": 48,
+    "edges": 87
+  },
+  {
+    "name": "north-18",
+    "type": "north",
+    "nodes": 13,
+    "edges": 19
+  },
+  {
+    "name": "north-19",
+    "type": "north",
+    "nodes": 53,
+    "edges": 94
+  },
+  {
+    "name": "north-20",
+    "type": "north",
+    "nodes": 18,
+    "edges": 24
+  }
+]

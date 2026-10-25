@@ -1,0 +1,160 @@
+{
+  "crossingsPerType": {
+    "north": {
+      "alphagraph": 14.48,
+      "dagre": 15.46,
+      "drawio": 17.92,
+      "cytoscape": 12.7,
+      "klay": 13.82,
+      "elk": 12.6,
+      "graphviz": 11.48
+    },
+    "rome": {
+      "alphagraph": 95.42,
+      "dagre": 111.96,
+      "drawio": 122.96,
+      "cytoscape": 101.88,
+      "klay": 79.84,
+      "elk": 81.92,
+      "graphviz": 56.12
+    },
+    "ALL": {
+      "alphagraph": 54.95,
+      "dagre": 63.71,
+      "drawio": 70.44,
+      "cytoscape": 57.29,
+      "klay": 46.83,
+      "elk": 47.26,
+      "graphviz": 33.8
+    }
+  },
+  "overlapsPerType": {
+    "north": {
+      "alphagraph": 0,
+      "dagre": 0,
+      "drawio": 0,
+      "cytoscape": 0,
+      "klay": 0,
+      "elk": 0,
+      "graphviz": 0
+    },
+    "rome": {
+      "alphagraph": 0,
+      "dagre": 0,
+      "drawio": 0,
+      "cytoscape": 0,
+      "klay": 0,
+      "elk": 0,
+      "graphviz": 0
+    },
+    "ALL": {
+      "alphagraph": 0,
+      "dagre": 0,
+      "drawio": 0,
+      "cytoscape": 0,
+      "klay": 0,
+      "elk": 0,
+      "graphviz": 0
+    }
+  },
+  "layoutMsPerType": {
+    "north": {
+      "alphagraph": 23.82,
+      "dagre": 6.48,
+      "drawio": 13.58,
+      "cytoscape": 5.94,
+      "klay": 9.47,
+      "elk": 29.21,
+      "graphviz": 5.21
+    },
+    "rome": {
+      "alphagraph": 79.32,
+      "dagre": 18.4,
+      "drawio": 24.86,
+      "cytoscape": 9.67,
+      "klay": 26.63,
+      "elk": 42.82,
+      "graphviz": 9
+    },
+    "ALL": {
+      "alphagraph": 51.57,
+      "dagre": 12.44,
+      "drawio": 19.22,
+      "cytoscape": 7.8,
+      "klay": 18.05,
+      "elk": 36.01,
+      "graphviz": 7.11
+    }
+  },
+  "overall": {
+    "alphagraph": 54.95,
+    "dagre": 63.71,
+    "drawio": 70.44,
+    "cytoscape": 57.29,
+    "klay": 46.83,
+    "elk": 47.26,
+    "graphviz": 33.8
+  },
+  "headToHead": {
+    "alphagraph_vs_dagre": {
+      "graphs": 100,
+      "alphagraph_better": 39,
+      "tie": 61,
+      "alphagraph_worse": 0,
+      "mean_crossing_diff": 8.76,
+      "wilcoxon_p": 0,
+      "wilcoxon_z": -5.44,
+      "pairs": 39
+    },
+    "alphagraph_vs_drawio": {
+      "graphs": 100,
+      "alphagraph_better": 61,
+      "tie": 22,
+      "alphagraph_worse": 17,
+      "mean_crossing_diff": 15.49,
+      "wilcoxon_p": 0,
+      "wilcoxon_z": -5.64,
+      "pairs": 78
+    },
+    "alphagraph_vs_cytoscape": {
+      "graphs": 100,
+      "alphagraph_better": 46,
+      "tie": 20,
+      "alphagraph_worse": 34,
+      "mean_crossing_diff": 2.34,
+      "wilcoxon_p": 0.1482,
+      "wilcoxon_z": -1.45,
+      "pairs": 80
+    },
+    "alphagraph_vs_klay": {
+      "graphs": 100,
+      "alphagraph_better": 23,
+      "tie": 25,
+      "alphagraph_worse": 52,
+      "mean_crossing_diff": -8.12,
+      "wilcoxon_p": 0.0003,
+      "wilcoxon_z": -3.64,
+      "pairs": 75
+    },
+    "alphagraph_vs_elk": {
+      "graphs": 100,
+      "alphagraph_better": 19,
+      "tie": 27,
+      "alphagraph_worse": 54,
+      "mean_crossing_diff": -7.69,
+      "wilcoxon_p": 0,
+      "wilcoxon_z": -4.43,
+      "pairs": 73
+    },
+    "alphagraph_vs_graphviz": {
+      "graphs": 100,
+      "alphagraph_better": 3,
+      "tie": 29,
+      "alphagraph_worse": 68,
+      "mean_crossing_diff": -21.15,
+      "wilcoxon_p": 0,
+      "wilcoxon_z": -7.05,
+      "pairs": 71
+    }
+  }
+}

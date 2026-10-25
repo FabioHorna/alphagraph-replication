@@ -1,0 +1,13 @@
+participant,role_category,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,sus_score
+P01,software-architect,5,1,5,2,4,2,5,1,4,2,87.5
+P02,senior-software-engineer,4,2,4,3,4,2,4,2,3,2,70.0
+P03,solutions-analyst,4,2,5,2,4,1,4,2,4,3,77.5
+P04,technical-lead,5,1,4,2,5,2,4,2,4,2,82.5
+P05,it-auditor,4,2,4,2,4,2,5,3,3,2,72.5
+P06,it-auditor,4,1,4,4,5,1,5,1,4,2,82.5
+P07,it-auditor,5,2,5,4,4,1,4,1,4,3,77.5
+P08,it-auditor,4,2,4,4,5,1,3,1,5,3,75.0
+P09,it-auditor,5,2,5,4,4,1,4,1,4,3,77.5
+P10,it-process-coordinator,5,3,4,5,5,2,5,2,4,3,70.0
+P11,it-auditor,5,2,4,4,3,1,4,1,5,1,80.0
+P12,it-auditor,4,2,5,4,3,1,3,1,4,3,70.0

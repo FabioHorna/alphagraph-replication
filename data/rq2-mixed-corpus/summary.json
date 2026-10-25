@@ -1,0 +1,241 @@
+{
+  "crossingsPerType": {
+    "cyclic": {
+      "alphagraph": 11.45,
+      "dagre": 14.3,
+      "drawio": 13.65,
+      "cytoscape": 1.65,
+      "klay": 12,
+      "elk": 11,
+      "graphviz": 8.8
+    },
+    "layered": {
+      "alphagraph": 7.5,
+      "dagre": 7.85,
+      "drawio": 6.25,
+      "cytoscape": 9.85,
+      "klay": 4.35,
+      "elk": 4.55,
+      "graphviz": 4.15
+    },
+    "north": {
+      "alphagraph": 109.05,
+      "dagre": 121.4,
+      "drawio": 112.7,
+      "cytoscape": 68.15,
+      "klay": 88.35,
+      "elk": 90.55,
+      "graphviz": 79.35
+    },
+    "rome": {
+      "alphagraph": 29.6,
+      "dagre": 33.45,
+      "drawio": 30.5,
+      "cytoscape": 20.55,
+      "klay": 22,
+      "elk": 19.45,
+      "graphviz": 13.75
+    },
+    "tree": {
+      "alphagraph": 0,
+      "dagre": 0,
+      "drawio": 0,
+      "cytoscape": 0,
+      "klay": 0,
+      "elk": 0,
+      "graphviz": 0
+    },
+    "ALL": {
+      "alphagraph": 31.52,
+      "dagre": 35.4,
+      "drawio": 32.62,
+      "cytoscape": 20.04,
+      "klay": 25.34,
+      "elk": 25.11,
+      "graphviz": 21.21
+    }
+  },
+  "overlapsPerType": {
+    "cyclic": {
+      "alphagraph": 0,
+      "dagre": 0,
+      "drawio": 0,
+      "cytoscape": 0,
+      "klay": 0,
+      "elk": 0,
+      "graphviz": 0
+    },
+    "layered": {
+      "alphagraph": 0,
+      "dagre": 0,
+      "drawio": 0,
+      "cytoscape": 0,
+      "klay": 0,
+      "elk": 0,
+      "graphviz": 0
+    },
+    "north": {
+      "alphagraph": 0,
+      "dagre": 0,
+      "drawio": 0,
+      "cytoscape": 0,
+      "klay": 0,
+      "elk": 0,
+      "graphviz": 0
+    },
+    "rome": {
+      "alphagraph": 0,
+      "dagre": 0,
+      "drawio": 0,
+      "cytoscape": 0,
+      "klay": 0,
+      "elk": 0,
+      "graphviz": 0
+    },
+    "tree": {
+      "alphagraph": 0,
+      "dagre": 0,
+      "drawio": 0,
+      "cytoscape": 0,
+      "klay": 0,
+      "elk": 0,
+      "graphviz": 0
+    },
+    "ALL": {
+      "alphagraph": 0,
+      "dagre": 0,
+      "drawio": 0,
+      "cytoscape": 0,
+      "klay": 0,
+      "elk": 0,
+      "graphviz": 0
+    }
+  },
+  "layoutMsPerType": {
+    "cyclic": {
+      "alphagraph": 27.11,
+      "dagre": 6.51,
+      "drawio": 16.95,
+      "cytoscape": 6.91,
+      "klay": 12.55,
+      "elk": 30.17,
+      "graphviz": 6.46
+    },
+    "layered": {
+      "alphagraph": 14.82,
+      "dagre": 3.86,
+      "drawio": 8.16,
+      "cytoscape": 4.88,
+      "klay": 4.33,
+      "elk": 22.33,
+      "graphviz": 2.46
+    },
+    "north": {
+      "alphagraph": 63.12,
+      "dagre": 14.56,
+      "drawio": 18.12,
+      "cytoscape": 6.51,
+      "klay": 20.57,
+      "elk": 34.49,
+      "graphviz": 6.78
+    },
+    "rome": {
+      "alphagraph": 35.35,
+      "dagre": 8.65,
+      "drawio": 14.35,
+      "cytoscape": 6.95,
+      "klay": 10.55,
+      "elk": 28.74,
+      "graphviz": 4.68
+    },
+    "tree": {
+      "alphagraph": 2.42,
+      "dagre": 2.02,
+      "drawio": 5.47,
+      "cytoscape": 4.15,
+      "klay": 1.85,
+      "elk": 21.15,
+      "graphviz": 1.79
+    },
+    "ALL": {
+      "alphagraph": 28.56,
+      "dagre": 7.12,
+      "drawio": 12.61,
+      "cytoscape": 5.88,
+      "klay": 9.97,
+      "elk": 27.38,
+      "graphviz": 4.44
+    }
+  },
+  "overall": {
+    "alphagraph": 31.52,
+    "dagre": 35.4,
+    "drawio": 32.62,
+    "cytoscape": 20.04,
+    "klay": 25.34,
+    "elk": 25.11,
+    "graphviz": 21.21
+  },
+  "headToHead": {
+    "alphagraph_vs_dagre": {
+      "graphs": 100,
+      "alphagraph_better": 41,
+      "tie": 59,
+      "alphagraph_worse": 0,
+      "mean_crossing_diff": 3.88,
+      "wilcoxon_p": 0,
+      "wilcoxon_z": -5.58,
+      "pairs": 41
+    },
+    "alphagraph_vs_drawio": {
+      "graphs": 100,
+      "alphagraph_better": 37,
+      "tie": 25,
+      "alphagraph_worse": 38,
+      "mean_crossing_diff": 1.1,
+      "wilcoxon_p": 0.6708,
+      "wilcoxon_z": -0.43,
+      "pairs": 75
+    },
+    "alphagraph_vs_cytoscape": {
+      "graphs": 100,
+      "alphagraph_better": 15,
+      "tie": 23,
+      "alphagraph_worse": 62,
+      "mean_crossing_diff": -11.48,
+      "wilcoxon_p": 0,
+      "wilcoxon_z": -5.46,
+      "pairs": 77
+    },
+    "alphagraph_vs_klay": {
+      "graphs": 100,
+      "alphagraph_better": 15,
+      "tie": 26,
+      "alphagraph_worse": 59,
+      "mean_crossing_diff": -6.18,
+      "wilcoxon_p": 0,
+      "wilcoxon_z": -5.12,
+      "pairs": 74
+    },
+    "alphagraph_vs_elk": {
+      "graphs": 100,
+      "alphagraph_better": 17,
+      "tie": 27,
+      "alphagraph_worse": 56,
+      "mean_crossing_diff": -6.41,
+      "wilcoxon_p": 0,
+      "wilcoxon_z": -5.34,
+      "pairs": 73
+    },
+    "alphagraph_vs_graphviz": {
+      "graphs": 100,
+      "alphagraph_better": 8,
+      "tie": 27,
+      "alphagraph_worse": 65,
+      "mean_crossing_diff": -10.31,
+      "wilcoxon_p": 0,
+      "wilcoxon_z": -6.75,
+      "pairs": 73
+    }
+  }
+}

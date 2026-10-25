@@ -1,0 +1,16 @@
+{
+  "name": "alphagraph-layout-benchmark",
+  "private": true,
+  "type": "module",
+  "description": "Comparative layout benchmark: AlphaGraph vs dagre/Mermaid, ELK, Graphviz (and draw.io subset).",
+  "dependencies": {
+    "@dagrejs/dagre": "^1.1.4",
+    "@hpcc-js/wasm": "^2.20.0",
+    "cytoscape": "^3.34.0",
+    "d3-dag": "^1.2.1",
+    "elkjs": "^0.9.3",
+    "jsdom": "^29.1.1",
+    "klayjs": "^0.4.1",
+    "mxgraph": "^4.2.2"
+  }
+}

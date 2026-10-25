@@ -1,0 +1,31 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Fabio Ernesto Horna Silva, Fabian Enrique Liñian Sanchez and
+Jhony Alex Zarate Bocanegra
+
+The data and documentation in this repository are licensed under the Creative Commons
+Attribution 4.0 International License. You are free to share and adapt the material for
+any purpose, including commercially, provided you give appropriate credit, link to the
+licence, and indicate if changes were made.
+
+To view a copy of this licence, visit:
+
+    https://creativecommons.org/licenses/by/4.0/
+
+The full legal code is at:
+
+    https://creativecommons.org/licenses/by/4.0/legalcode
+
+Appropriate credit means citing the article this package accompanies:
+
+    Horna Silva FE, Liñian Sanchez FE, Zarate Bocanegra JA. Automatic layout of software
+    architecture diagrams with the Sugiyama algorithm: an empirical study in industry.
+
+SCOPE. This licence applies to data/, corpora/mixed/, corpora/*.sha256,
+corpora/public-standard/index.json, protocols/ and the Markdown documentation. It does
+NOT apply to the contents of scripts/, which are under the MIT License (LICENSE-MIT), and
+it does NOT apply to the Rome-Lib or North graph collections, which are third-party data
+distributed without a licence, are not contained in this repository, and are downloaded
+from their original source at run time. See LICENSE.md and corpora/ATTRIBUTION.md.
+
+The material is provided as is, without warranties.
