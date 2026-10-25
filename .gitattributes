@@ -1,0 +1,6 @@
+# This package verifies its data by SHA-256 over exact bytes, so git must never
+# convert line endings on checkout. Without this, cloning on a machine with
+# core.autocrlf=true rewrites every LF to CRLF and corpora/*.sha256 fails for all
+# 100 synthetic graphs, while the same clone on Linux or macOS passes - a check
+# that depends on the reviewer's platform is worse than no check.
+* -text

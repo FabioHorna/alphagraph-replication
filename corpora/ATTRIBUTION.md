@@ -30,6 +30,10 @@ About 5 MB of download. The script reports `100/100 graphs match the checksums r
 by the authors`, which is what makes the rebuilt corpus the same corpus and not merely a
 similar one.
 
+The checksums are over exact bytes, so the repository carries a `.gitattributes` with
+`* -text` to stop git rewriting line endings on checkout. Without it a clone on Windows
+with `core.autocrlf=true` fails every checksum while the same clone on Linux passes.
+
 ### Provenance, verified rather than asserted
 
 Every one of the 100 graphs was compared against the GraphML file it names, by node id
