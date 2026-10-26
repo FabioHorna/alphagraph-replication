@@ -42,7 +42,7 @@ graph data.
 
 | § | Claim | Why it is absent |
 |---|---|---|
-| 5.4 | 92 % task success, ~2 errors per task, errors concentrated in tasks 16 and 18 | The per-task records were not found. The twenty-task list itself is not in `protocols/INSTRUMENTOS.md` either; the paper cites "the appendices of the validation report" for it. |
+| 5.3 | **92 % task success, ~2 errors per task, errors concentrated in tasks 16 and 18** | The per-task records were not found. The twenty-task list itself is not in `protocols/INSTRUMENTOS.md` either; the paper cites "the appendices of the validation report" for it. This is the one reported result the package cannot recompute, and the Data Availability statement now says so instead of claiming the whole of Sections 5.1–5.3. `reproduce.py` prints the exclusion on every run. |
 | 4.5 | counterbalancing order and manual tool actually used per participant | The per-participant form in `protocols/INSTRUMENTOS.md` §1 records both, but the filled forms were not found; only the consolidated times survive. |
 | 4.7 | number of corrections per condition | Same form, same situation. |
 | 5.4 | complementary technical results (test suites, SAST/SCA, security probes) | They live in the project's own evidence folder, not in the research package. They are software-engineering artefacts of AlphaGraph, not research data, and the Data Availability statement does not promise them. |
@@ -84,7 +84,17 @@ of the task, which is a separate question the paper discusses.
 responses and the rubric ratings cannot be re-measured. What was checked is that the
 published inferential statistics follow from the published per-unit values, which is
 arithmetic, not corroboration. `data/PROVENANCE.md` sets out what each level warrants.
-The 92 % task-success figure of §5.4 has no record here at all.
+The 92 % task-success figure of §5.3 has no record here at all.
+
+**A fairness caveat about the RQ2 comparison, not a defect.** The AlphaGraph condition
+lays each graph out with four dagre configurations and keeps the one with fewest
+crossings, while the dagre condition is a single pass. The two therefore do not run under
+the same computational budget, which the `layoutMs` column makes visible: AlphaGraph
+averages 51.6 ms against dagre's 12.4 ms over the public corpus. The comparison is
+reproducible and is the one the paper intends — a tool that picks the best of several
+candidates against a tool that does not — but it is not a like-for-like engine
+benchmark. The manuscript discusses the trade-off in its lessons learned; a reader
+comparing the crossing columns alone should know it.
 
 ## 4. Findings to settle before submission
 

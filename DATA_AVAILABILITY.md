@@ -25,8 +25,10 @@ with edge crossings, edge length, layout area, node overlaps and layout time, wh
 underlie Tables 4 and 5; the per-graph KLM-GOMS estimates and the operator constants used;
 the per-participant layout times of Table 3; the item-level anonymised SUS responses of
 Table 6; the rubric ratings of the three expert judges; the AS-IS/TO-BE per-diagram
-measurements; and the scripts that recompute every statistic reported in Sections 5.1 to
-5.3, each printed next to the value published here.
+measurements; and the scripts that recompute the reported statistics, each printed next to the value
+published here. The one exception is the twenty-task success rate and error count
+reported in Section 5.3: no per-task record was retained, so those two figures cannot be
+recomputed from the package.
 
 Participant-level records that could permit re-identification are not publicly available,
 in accordance with the informed consent obtained: this covers the signed SUS

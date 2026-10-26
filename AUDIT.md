@@ -100,9 +100,49 @@ It also surfaced three inaccuracies in Sections 4.2, 4.3 and 5.1, recorded as fi
 9 and 10 in [INVENTORY.md](INVENTORY.md). None affects a computed result; finding 10
 changes what the KLM-GOMS numbers may be said to be about.
 
-## 6. Verdict
+## 6. Independent review, 2026-10-25
 
-No blocker to publication from a privacy, security or proprietary-content standpoint.
-The outstanding items before the DOI is minted are editorial, and all of them are in
-INVENTORY.md section 4: the manuscript's wording has to match what this package shows, and the
-Code Availability bracket has to be decided.
+An independent review of the published `v1.0.0` recomputed the headline figures from the
+CSV files without using the summary JSONs, and reproduced them: mean time reduction
+28.8139 %, SUS 76.875, expert mean 3.9333, AlphaGraph 54.95 crossings, 13.7498 % better
+than dagre, 21.9903 % better than draw.io, 700 benchmark rows, and the North distribution
+[43, 4, 3, 0, 0] with a 49-node maximum. It could not re-run the Node engines in its
+environment, so that part rests on the run recorded in section 3 of INVENTORY.md.
+
+It raised four defects, all fixed in `v1.0.1`:
+
+1. **`reproduce.py` never failed.** `cmp()` printed `MISMATCH` but did not accumulate
+   failures or affect the exit code, so `exit 0` did not mean agreement. It now collects
+   mismatches and warnings, prints them in a summary, and exits 1. Tested by perturbing a
+   SUS response: the run exits 1 and names the statistic.
+2. **`corpora/public-standard/index.json` still called both samples size-stratified.**
+   Corrected, in the file and in the generator that writes it, with the realised
+   distribution recorded for each collection. The manuscript sentence that made the same
+   blanket claim is edit 0 in MANUSCRIPT_EDITS.md.
+3. **A partial verification could pass.** `verify_corpora.py` exited 0 when the public
+   corpus was absent and its checks were skipped. It now reports `PARTIAL VERIFICATION`,
+   lists what did not run, and exits 1 unless `--allow-partial` is given.
+4. **The Data Availability statement overclaimed.** It said the scripts recompute every
+   statistic in Sections 5.1 to 5.3, which includes the 92 % task-success rate that has no
+   record here. The statement, the README and the manuscript now name that exception, and
+   `reproduce.py` prints it on every run.
+
+It also noted that the AlphaGraph condition keeps the best of four dagre configurations
+while dagre runs a single pass, so the two do not share a computational budget. That is
+recorded in INVENTORY.md section 3 as a fairness caveat; the manuscript discusses the
+trade-off in its lessons learned.
+
+Fixing item 2 exposed a fifth problem, found by accident rather than by review: run
+directly with a partially extracted source, `convert-standard.mjs` silently produced a
+different 100-graph sample that looked entirely plausible. It now checks each collection
+against its expected size (11,534 Rome, 1,277 North) and refuses to run otherwise, unless
+`ALLOW_PARTIAL_SRC=1`. The published sample was restored from backup and re-verified
+against the checksums before anything was committed.
+
+## 7. Verdict
+
+No blocker to publication from a privacy, security or proprietary-content standpoint, and
+the four defects raised by the independent review are fixed. The outstanding items before
+the DOI is minted are editorial, and all of them are in INVENTORY.md section 4: the
+manuscript's wording has to match what this package shows, and the Code Availability
+bracket has to be decided.

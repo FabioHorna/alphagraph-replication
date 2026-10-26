@@ -5,9 +5,11 @@ diagrams with the Sugiyama algorithm: an empirical study in industry"* (submitte
 *Empirical Software Engineering*). This is the replication package only; the AlphaGraph
 application's source code is not part of it, and the benchmark does not need it.
 
-Everything reported in the manuscript that can be recomputed from the records that
-exist is recomputed here by one script, which prints every figure next to the value
-printed in the paper.
+Everything reported in the manuscript that can be recomputed from the records that exist
+is recomputed here by one script, which prints every figure next to the value printed in
+the paper and exits non-zero if any of them disagrees. One reported result cannot be
+recomputed at all: the 92 % task-success rate and the mean of two errors per task in
+Section 5.3, for which no per-task record was found.
 
 | Read this | For |
 |---|---|
@@ -37,13 +39,16 @@ archives and verifies every graph against the authors' checksums. See
 recomputed value, the value printed in the manuscript, and `OK` or `MISMATCH`. It covers
 RQ1 (field times and KLM-GOMS), RQ2 (crossings, head-to-head Wilcoxon, AS-IS/TO-BE) and
 RQ3 (SUS, expert rubric), and labels each section with the provenance of the file it
-reads. As of the last run, every statistic in the manuscript is reproduced.
+reads. It **exits non-zero** if any check disagrees or any sanity check warns, so the
+exit code is the result; all 20 checks currently reproduce.
 
 `verify_corpora.py` checks the step before that: that the graphs are well formed, that
 **every graph file matches the SHA-256 the authors recorded** — which pins the node ids
 and the ordered edge list, where equal counts would not — that every result row refers to
 a graph in the corpus it names, and that the corpus properties stated in Section 4.2
-hold. It exits non-zero on any failure.
+hold. It exits non-zero on any failure, and also when the public corpus is absent and its
+checks could not run — a partial verification is reported as such and does not pass.
+Use `--allow-partial` to accept a run without it.
 
 What was verified once, by hand, rather than on every run: the 100 public graphs were
 compared against the GraphML files they name in the upstream archives (identical, all

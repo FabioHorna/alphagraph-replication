@@ -9,12 +9,15 @@ refers to one of them, and that the corpus properties stated in Section 4.2 hold
     python scripts/fetch_corpora.py     # once, to rebuild the public corpus
     python scripts/analysis/verify_corpora.py
 
-The public corpus is not redistributed (see corpora/ATTRIBUTION.md), so its checks are
-skipped until `fetch_corpora.py` has rebuilt it. Exits non-zero if any check fails.
+The public corpus is not redistributed (see corpora/ATTRIBUTION.md), so its checks
+cannot run until `fetch_corpora.py` has rebuilt it. That counts as a failure, so that
+exit code 0 always means the whole verification ran and passed; pass --allow-partial to
+accept a run without those checks. Exits non-zero if any check fails.
 """
 
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import json
@@ -260,6 +263,14 @@ def paper_claims_mixed(mixed: dict[str, dict], public: dict[str, dict]) -> None:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--allow-partial", action="store_true",
+        help="succeed even though the public corpus is absent and its checks cannot run. "
+             "Without this flag a missing public corpus is a failure, so that an exit "
+             "code of 0 always means the whole verification ran.")
+    args = parser.parse_args()
+
     print("AlphaGraph - corpus and result-file verification")
 
     public_folder = CORPORA / "public-standard"
@@ -273,7 +284,9 @@ def main() -> int:
         print("  (corpora/ATTRIBUTION.md). Run:")
         print("      python scripts/fetch_corpora.py")
         print("  to rebuild them from the original archives and verify their checksums.")
-        skipped.append("public corpus checks")
+        skipped.append("public corpus checks: SHA-256 identity, structure, provenance "
+                       "against index.json, the Section 4.2 sampling claims, and whether "
+                       "data/rq2-crossings/ was computed on these graphs")
 
     mixed = structural_checks("mixed corpus", CORPORA / "mixed")
 
@@ -287,14 +300,27 @@ def main() -> int:
     paper_claims(public, mixed)
 
     print()
-    for item in skipped:
-        print(f"SKIPPED: {item}")
     if failures:
-        print(f"{len(failures)} check(s) failed:")
+        print(f"{len(failures)} check(s) FAILED:")
         for item in failures:
             print(f"  - {item}")
+        if skipped:
+            print(f"...and {len(skipped)} group(s) of checks never ran.")
         return 1
-    print("All checks passed.")
+
+    if skipped:
+        print("PARTIAL VERIFICATION - not every check ran.")
+        for item in skipped:
+            print(f"  skipped: {item}")
+        print()
+        print("  Everything that did run passed, but this is not a verified package:")
+        print("  run `python scripts/fetch_corpora.py` and then this script again.")
+        if args.allow_partial:
+            print("  --allow-partial given, so exiting 0 anyway.")
+            return 0
+        return 1
+
+    print("All checks passed, with no part of the verification skipped.")
     return 0
 
 

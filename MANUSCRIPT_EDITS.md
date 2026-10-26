@@ -1,11 +1,11 @@
 # Manuscript edits made to match this package
 
-Twelve sentence-level corrections plus the Data Availability declaration, applied to
+Thirteen sentence-level corrections plus the Data Availability declaration, applied to
 `EMSE_Manuscript_EN (1).docx` as **tracked changes** under the author name
 `Data availability revision`, so each one can be accepted or rejected individually.
 
-- `EMSE_Manuscript_EN_rev2-tracked.docx` — with the tracked changes, for review
-- `EMSE_Manuscript_EN_rev2-clean.docx` — the same document with every change accepted
+- `EMSE_Manuscript_EN_rev3-tracked.docx` — with the tracked changes, for review
+- `EMSE_Manuscript_EN_rev3-clean.docx` — the same document with every change accepted
 - the original file is untouched
 
 Both were checked against the OOXML schema, and the tracked version was verified to
@@ -18,10 +18,23 @@ declaration with the real DOI, and decide whether the application's source code 
 sentence of its own (see [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md), point 2 of
 "Before pasting this"). Nothing else in the file is a placeholder.
 
-**No reported number changes.** No table, figure or statistic was touched. All twelve
-edits are descriptions of method, corpus and provenance.
+**No reported number changes.** No table, figure or statistic was touched. All thirteen
+edits are descriptions of method, corpus, provenance and what the package can deliver.
+
+Every edit was verified present in the changes-accepted copy, and every original phrase
+it replaces verified gone, by extracting the document text and matching each one.
 
 ## The edits
+
+### 0 · Section 4.2 — drop the blanket claim that both samples are size-stratified
+
+> From each collection, a deterministic ~~size-stratified~~ sample of 50 graphs was drawn
+> (rome-01 to rome-50 and north-01 to north-50), yielding a combined sample of n = 100.
+
+Why: only the Rome sample is stratified by size. Edit 1, immediately after this sentence,
+now states exactly what each sample is, so this one must not contradict it. The same
+blanket claim was also removed from `corpora/public-standard/index.json`, whose
+provenance note now records the realised distribution for both collections.
 
 ### 1 · Section 4.2 — what the stratification actually was
 
@@ -126,7 +139,7 @@ supported by this sample.
 > ... executed with ~~scripts available in the project repository~~ **the scripts available
 > in the replication package cited under Data Availability**.
 
-### 13 · Declarations — Data Availability
+### 13 · Declarations — Data Availability, without overclaiming
 
 The placeholder `…` is replaced by the statement in
 [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md), as one paragraph that also covers the code,
@@ -135,6 +148,10 @@ the journal asks for one, split the last sentence out under that heading. The st
 describes what the package actually does with the public graphs: it does not redistribute
 them, and it ships the sampling script, the per-graph source identifiers, the checksums
 and a rebuild script instead.
+
+It also no longer claims to recompute "every statistic reported in Sections 5.1 to 5.3".
+It names the exception: the twenty-task success rate and error count of Section 5.3, for
+which no per-task record was retained. `reproduce.py` prints that exclusion on every run.
 
 ## Not changed
 

@@ -30,8 +30,27 @@ function parseGraphml(text) {
 }
 
 /** Deterministic size-stratified pick of `quota` files from a corpus directory. */
+// Size of each upstream collection, as shipped by graphdrawing.org and as cited in the
+// paper. The sample is a stride over the sorted file list, so a partial extraction
+// silently yields a DIFFERENT sample that still looks plausible. Refuse that.
+const EXPECTED = { rome: 11534, north: 1277 }
+
 function sample(dir, type, quota) {
   const files = readdirSync(dir).filter((f) => f.endsWith('.graphml'))
+  const expected = EXPECTED[type]
+  if (expected && files.length !== expected) {
+    const message =
+      `${type}: found ${files.length} .graphml files in ${dir}, expected ${expected}. ` +
+      'The sample is a stride over the file list, so an incomplete source produces a ' +
+      'different sample from the one used in the study.'
+    if (process.env.ALLOW_PARTIAL_SRC === '1') {
+      console.warn(`WARNING: ${message} Continuing because ALLOW_PARTIAL_SRC=1.`)
+    } else {
+      console.error(`ERROR: ${message}`)
+      console.error('Re-extract the archive, or set ALLOW_PARTIAL_SRC=1 to override.')
+      process.exit(1)
+    }
+  }
   // Size token taken from the LAST numeric field of the file name. CAREFUL: that
   // field means different things in the two collections, as their own naming shows:
   //   rome : grafo<id>.<nodes>.graphml    -> this reads the node count. Correct.
@@ -88,7 +107,8 @@ function main() {
     provenance: {
       rome: 'http://www.graphdrawing.org/data/rome-graphml.tgz (11534 undirected graphs)',
       north: 'http://www.graphdrawing.org/data/north-graphml.tgz (1277 DAGs)',
-      note: 'Real public Graph Drawing corpora; size-stratified deterministic sample (50 per type).',
+      note:
+        'Real public Graph Drawing corpora. Deterministic sample of 50 per collection, selected by a stride over the last numeric field of the file name. In Rome (grafo<id>.<nodes>.graphml) that field is the node count, so the Rome sample is size-stratified: 10 graphs in each of the strata 10-25, 26-40, 41-55, 56-70, 71-100 nodes. In North (g.<nodes>.<serial>.graphml) it is a serial number, so the North sample is NOT stratified by size: 10-49 nodes, median 16, distributed [43, 4, 3, 0, 0] over those strata. See INVENTORY.md finding 8.',
     },
     graphs: index,
   }, null, 2))

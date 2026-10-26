@@ -14,6 +14,7 @@ Each section states which table or paragraph of the paper it reproduces.
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -54,9 +55,23 @@ def header(title: str, provenance: str = "") -> None:
         print(f"  provenance: {provenance}  (see data/PROVENANCE.md)")
 
 
+checks: list[str] = []
+mismatches: list[str] = []
+warnings: list[str] = []
+
+
 def cmp(label: str, got: float, expected: float, unit: str = "", tol: float = 0.05) -> None:
-    flag = "OK" if abs(got - expected) <= tol else "MISMATCH"
-    print(f"  {label:<34} {got:>9.3f}{unit}   paper: {expected:>7.3f}{unit}   [{flag}]")
+    checks.append(label)
+    ok = abs(got - expected) <= tol
+    if not ok:
+        mismatches.append(f"{label}: recomputed {got:.4f}{unit}, paper {expected:.4f}{unit}")
+    print(f"  {label:<34} {got:>9.3f}{unit}   paper: {expected:>7.3f}{unit}   "
+          f"[{'OK' if ok else 'MISMATCH'}]")
+
+
+def warn(message: str) -> None:
+    warnings.append(message)
+    print(f"  WARNING: {message}")
 
 
 def rq1_field_timing() -> None:
@@ -69,7 +84,7 @@ def rq1_field_timing() -> None:
     # Reduction recomputed from the raw times, not taken from the file's column.
     reduction = (df["t_manual_s"] - df["t_app_s"]) / df["t_manual_s"] * 100
     if np.abs(df["reduction_pct"] - reduction).max() > 0.1:
-        print("  WARNING: reduction_pct column disagrees with the recomputed value")
+        warn("reduction_pct column disagrees with the recomputed value")
 
     n = len(reduction)
     sem = stats.sem(reduction, ddof=1)
@@ -162,9 +177,9 @@ def rq3_sus() -> None:
     score = (odd + even) * 2.5
 
     if (df[items].min().min() < 1) or (df[items].max().max() > 5):
-        print("  WARNING: item responses outside the 1-5 Likert range")
+        warn("item responses outside the 1-5 Likert range")
     if np.abs(score - df["sus_score"]).max() > 0.01:
-        print("  WARNING: sus_score column disagrees with the recomputed score")
+        warn("sus_score column disagrees with the recomputed score")
 
     print(f"  participants: {len(df)}")
     cmp("mean SUS", score.mean(), PAPER["sus_mean"], "", tol=0.05)
@@ -256,7 +271,7 @@ def rq2_asis_tobe() -> None:
     print(f"  mean layout time: {df['layout_ms'].mean():.0f} ms   paper: 29 ms")
 
 
-def main() -> None:
+def main() -> int:
     print("AlphaGraph - reproduction of the reported statistics")
     print(f"data directory: {DATA}")
     rq1_field_timing()
@@ -270,7 +285,22 @@ def main() -> None:
     print("inferential statistics follow from the published per-unit values; it is not")
     print("an independent record of the measurement. data/PROVENANCE.md explains why.")
     print()
+    print("Not covered by this script: the 92% task-success rate and the mean of two")
+    print("errors per task reported in Section 5.4. No per-task record was found, so")
+    print("those two figures cannot be recomputed from this package at all.")
+    print()
+
+    if mismatches or warnings:
+        for item in mismatches:
+            print(f"MISMATCH: {item}")
+        for item in warnings:
+            print(f"WARNING:  {item}")
+        print()
+        print(f"{len(mismatches)} mismatch(es), {len(warnings)} warning(s).")
+        return 1
+    print(f"All {len(checks)} checks reproduce the published values.")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
